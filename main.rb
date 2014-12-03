@@ -31,13 +31,13 @@ get '/tweets' do
         config.access_token_secret = "2EOto7unip5Ebot0bCGPqzZFw2lLUMQLGcd92HZikGNcX"
 end
    
-    @search_results = client.search("@mercerfootball", result_type: "recent").take(30).collect do |tweet|
+    @search_results = client.search("@nfl" "@ESPNNFL", result_type: "recent").take(50).collect do |tweet|
       #"#{tweet.user.screen_name}: #{tweet.text}"
         tweet 
 end
     
-    @title = "My _____ Tweets"
-    @description = "This page my tweets that ______"
+    @title = "NFL NEWS TWEETS"
+    @description = "This page is all about NFL news tweets"
     @works = "active"
     erb :tweets
 end 

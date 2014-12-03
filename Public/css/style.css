@@ -6,17 +6,24 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/bg.jpg') no-repeat center center fixed;
+    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-h1,
+h1 {
+    font-family: "cursive";
+    color: #FFFFFF;
+}
+
 h2,
 h3,
-h4,
+h4 {
+    font-family: "monospace";
+    color: #FFFFFF;
+}
 h5,
 h6 {
     text-transform: uppercase;
@@ -28,7 +35,7 @@ h6 {
 p {
     font-size: 1.25em;
     line-height: 1.6;
-    color: #0000CD;
+    color: #00FF00;
 }
 
 hr {
@@ -162,7 +169,7 @@ footer p {
 
     .navbar-default {
         border: none;
-        background: #fff;
+        background: #000;
         background: rgba(255,255,255,0.9);
     }
 
