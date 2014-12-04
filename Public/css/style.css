@@ -22,7 +22,7 @@ h2,
 h3,
 h4 {
     font-family: "monospace";
-    color: #FFFFFF;
+    color: #000;
 }
 h5,
 h6 {
@@ -33,14 +33,14 @@ h6 {
 }
 
 p {
-    font-size: 1.25em;
-    line-height: 1.6;
+    font-size: 1.35em;
+    line-height: 1.5;
     color: #FF0000;
 }
 
 hr {
     max-width: 400px;
-    border-color: #999999;
+    border-color: #000000;
 }
 
 .brand,
@@ -50,7 +50,7 @@ hr {
 
 .navbar-brand {
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 1900;
     letter-spacing: 2px;
 }
 
