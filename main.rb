@@ -19,7 +19,7 @@ get '/works' do
     @title = "My Clips"
     @description = "This page provides links to Kyle Jones public sites."
     @works = "active"
-    erb :work
+    erb :works
 end
 
 get '/tweets' do 
