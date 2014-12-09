@@ -46,7 +46,13 @@ get '/news' do
     require 'google-search' 
     query = "National Football League"
     @results = Array.new
-    Google::Search::
+    Google::Search::News.new do |search|
+        search.query = query
+        #search.size = :large
+    end.each { |item| @results.push item }
+    erb :news
+end
+
 get '/instanfl' do 
     require 'instagram'
     @title = "NFL on Istagram"
