@@ -53,24 +53,3 @@ get '/news' do
     erb :news
 end
 
-get '/instanfl' do 
-    require 'instagram'
-    @title = "NFL on Istagram"
-    @description = "This page gives the latest NFL News via pictures."
-    @works = "active" 
-
- Instagram.configure do |config|
-     config.client_id = "2b80af3b9cf04b57882cda32b7528a26"
-     config.client_secret = "50d3e08902f344daba71dd5d6dad0fb2"
-     #For secured endpoints only
-    end
-
-client = Instagram.client(:access_token => session[:access_token])
-tags = client.tag_search ('nflonespn' 'nfl')
-   @photos = Array.new
-for media_item in client.tag_recent_media(tags[0].name)
-    #html << "<img src='#{media_item.images.thumbnail.url}'>"
-   @photos.push(media_item)
-    end
-    erb :instanfl
-end 
