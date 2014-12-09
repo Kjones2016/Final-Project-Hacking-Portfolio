@@ -42,6 +42,11 @@ end
     erb :tweets
 end 
 
+get '/news' do
+    require 'google-search' 
+    query = "National Football League"
+    @results = Array.new
+    Google::Search::
 get '/instanfl' do 
     require 'instagram'
     @title = "NFL on Istagram"
